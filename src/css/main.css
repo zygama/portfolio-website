@@ -5,9 +5,10 @@
   margin-left: 0;
   margin-right: 0;
   line-height: 70px;
-  background-color: #333;
+  background-color: rgba(0, 0, 0, 0);
   position: fixed; /* Header now follow cursor */
   top: 0;
+  z-index: 999;
 }
 
 .header .header-logo {
@@ -29,4 +30,41 @@
 
 .header .header-menu a:hover {
   color: #3498db;
+}
+
+/* Banner */
+
+.banner {
+  margin-top: -25px;
+}
+
+.banner .banner-image {
+  position: relative;
+}
+
+.banner .banner-content {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 30%;
+}
+
+.banner .banner-content h1,
+.banner .banner-content h2 {
+  color: #fff;
+}
+
+/* About */
+.about .about-single-element {
+  text-align: center;
+}
+
+.about .about-single-element .icon {
+  font-size: 60px;
+  text-align: center;
+}
+
+.about .about-single-element p {
+  text-align: left;
+  margin-top: 20px;
 }
