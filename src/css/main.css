@@ -97,3 +97,10 @@
   display: inline-block;
   list-style-type: none;
 }
+
+/* Responsive Example */
+@media screen and (max-width: 600px) { /* Execution when screen is <= 600px */
+  #open_contact_modal {
+    display: none;
+  }
+}
