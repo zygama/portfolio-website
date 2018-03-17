@@ -12,6 +12,11 @@
 		<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
 		<!-- Fonts -->
 
+		<!-- Meta SEO -->
+		<meta name="description" content="La description de votre site: PRIMORDIAL -> mettre des bons mots clés">
+		<meta name="keywords" content="webdesign, webdeveloper, développeur front-end">
+		<!-- Meta SEO -->
+
 		<title>Mon Portfolio</title>
 	</head>
 	<body>
@@ -53,11 +58,10 @@
 							<button class="delete" aria-label="close"></button>
 						</header>
 						<section class="modal-card-body">
-							<!-- Content ... -->
+							<p>Le contenu de mon modal</p>
 						</section>
 						<footer class="modal-card-foot">
-							<button class="button is-success">Save changes</button>
-							<button class="button">Cancel</button>
+							<button class="button is-link">Save changes</button>
 						</footer>
 					</div>
 				</div>
@@ -131,30 +135,33 @@
 			<h2 class="heading-site">Contactez-moi</h2>
 			<footer class="footer">
 				<div class="footer-contact-form">
-					<div class="field">
-					  <label class="label">Nom</label>
-					  <div class="control">
-					    <input class="input" type="text" placeholder="e.g Smith">
-					  </div>
-					</div>
-					<div class="field">
-					  <label class="label">Prénom</label>
-					  <div class="control">
-					    <input class="input" type="text" placeholder="e.g Alex">
-					  </div>
-					</div>
-					<div class="field">
-					  <label class="label">Votre Email</label>
-					  <div class="control">
-					    <input class="input" type="email" placeholder="e.g. alexsmith@gmail.com">
-					  </div>
-					</div>
-					<div class="field">
-					  <label class="label">Votre Message</label>
-					  <div class="control">
-							<textarea class="textarea" placeholder="Votre Message..."></textarea>
-					  </div>
-					</div>
+					<form>
+						<div class="field">
+							<label class="label">Nom</label>
+							<div class="control">
+								<input id="lastname" class="input" type="text" placeholder="e.g Smith" name="lastname">
+							</div>
+						</div>
+						<div class="field">
+							<label class="label">Prénom</label>
+							<div class="control">
+								<input id="firstname" class="input" type="text" placeholder="e.g Alex" name="firstname">
+							</div>
+						</div>
+						<div class="field">
+							<label class="label">Votre Email</label>
+							<div class="control">
+								<input id="email" class="input" type="email" placeholder="e.g. alexsmith@gmail.com" name="email">
+							</div>
+						</div>
+						<div class="field">
+							<label class="label">Votre Message</label>
+							<div class="control">
+								<textarea id="message" class="textarea" placeholder="Votre Message..." name="message"></textarea>
+							</div>
+						</div>
+					</form>
+					<button class="button is-link" id="send_email">Envoyer</button>
 				</div>
 				<div class="footer-informations">
 					<p>65, rue des pissenlits</p>
