@@ -3,10 +3,10 @@ $(document).ready(function() { // wait the DOM to be loaded
     showContactModal();
   });
 
-  $('.modal-card-head .delete').click(function(event) {
+  $('#contact_modal .modal-card-head .delete').click(function(event) {
     hideContactModal();
   });
-  $('.modal .modal-background').click(function(event) {
+  $('#contact_modal .modal-background').click(function(event) {
     hideContactModal();
   });
 });
