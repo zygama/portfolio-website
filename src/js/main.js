@@ -1,20 +1,20 @@
 $(document).ready(function() { // wait the DOM to be loaded
-  $('#open_modal').click(function(event) {
-    showModal();
+  $('#open_contact_modal').click(function(event) {
+    showContactModal();
   });
 
   $('.modal-card-head .delete').click(function(event) {
-    hideModal();
+    hideContactModal();
   });
   $('.modal .modal-background').click(function(event) {
-    hideModal();
+    hideContactModal();
   });
 });
 
-function showModal() {
-  $('#modal_to_open').addClass('is-active');
+function showContactModal() {
+  $('#contact_modal').addClass('is-active');
 }
 
-function hideModal() {
-  $('#modal_to_open').removeClass('is-active');
+function hideContactModal() {
+  $('#contact_modal').removeClass('is-active');
 }
